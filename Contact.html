@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #f375f5;
+            color: #e9e5e5;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background: #f375f5;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            text-decoration: underline;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>125 8th Avenue,Alexandra 2014</p>
+        <p>Phone: (+27) 72 933 7079</p>
+        <p>
+            <a href="https://www.linkedin.com/in/katlego-ngubo-43a436308/">LinkedIn</a> | 
+            <a href="https://github.com/MaNgubo">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
