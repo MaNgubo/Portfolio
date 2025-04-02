@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katlego's Portfolio</title>
+    <style>
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        
+        header {
+            background: #f375f5;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav {
+            margin-left: auto;
+        }
+        
+        nav a {
+            color: white;
+            margin-left: 20px;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            background: #f375f5;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+       
+        .profile {
+            display: flex;
+            margin: 20px 0;
+        }
+        
+        .profile-pic {
+            width: 175px;
+            height: 180px;
+            border-radius: 50%;
+            margin-left: 29px; 
+            border: 3px solid #f375f5;
+            order: 2; 
+        }
+        
+        .profile-text {
+            flex: 1;
+            order: 1; 
+        }
+        
+        
+        .contact-container {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .address {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        .map {
+            flex: 1;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        
+        
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav {
+                margin: 15px 0 0 0;
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
+            
+            .profile, .contact-container {
+                flex-direction: column;
+            }
+            
+            .profile-pic {
+                order: 1; 
+                margin: 0 auto 15px auto;
+            }
+            
+            .address {
+                padding-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Katlego's Portfolio</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <video width="100%" controls>
+            <source src="video.mp4" type="video/mp4"\>
+        </video>
+        
+        <div class="profile">
+            <div class="profile-text">
+                <h2>Katlego Ngubo</h2>
+                <p>Hello! I'm a web developer from South Africa. I love creating websites using HTML, CSS and Python</p>
+                <p>I enjoy solving problems and building things that people can use. When I'm not coding, I like to read and learn new things.</p>
+            </div>
+            <img src="kat.jpg" alt="Katlego's photo" class="profile-pic">
+        </div>
+    </main>
+    
+    <footer>
+        <div class="contact-container">
+            <div class="address">
+                <h3>Contact Me</h3>
+                <p>125 8th Avenue, Alexandra</p>
+                <p>Phone: (+27) 72 933 7079</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/katlego-ngubo-43a436308/">LinkedIn</a> | 
+                    <a href="https://github.com/MaNgubo">GitHub</a>
+                </p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.231674157874!2d28.08821531502836!3d-26.193722983443887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9513c619b7d5c1%3A0x9a7e7a9d7d1c1d1d!2s125%208th%20Ave%2C%20Alexandra%2C%20Johannesburg%2C%202010!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
